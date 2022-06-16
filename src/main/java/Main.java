@@ -57,9 +57,25 @@ public class Main {
                         System.out.println(status.getMessage());
                     }
                 }
+                catch (NullPointerException e)
+                {
+                    System.out.println("null reference error");
+                }
+                catch (IOException e)
+                {
+                    System.out.println("file operation error");
+                }
+                catch (IndexOutOfBoundsException e)
+                {
+                    System.out.println("indexing an element error");
+                }
+                catch (ParseException e)
+                {
+                    System.out.println("query parsing error");
+                }
                 catch (Exception e)
                 {
-                    System.out.println("error");
+                    System.out.println("general error");
                 }
             }
 
